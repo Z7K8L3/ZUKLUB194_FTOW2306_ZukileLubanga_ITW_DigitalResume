@@ -3,49 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles/style.css" rel="stylesheet"/>
+    <link href="./styles/style.css" rel="stylesheet"/>
+    <link href="./styles/utility.css" rel="stylesheet"/>
+    <link href="./styles/components/header.css" rel="stylesheet"/>
+    <link href="./styles/components/hero.css" rel="stylesheet"/>
+    <link href="./styles/components/education.css" rel="stylesheet"/>
+    <link href="./styles/components/contact.css" rel="stylesheet"/>
+    <link href="" rel="stylesheet"/>
+    <link href="" rel="stylesheet"/>
+    <link href="" rel="stylesheet"/>
+    <link href="" rel="stylesheet"/>
+    <link href="" rel="stylesheet"/>
     <title>Zukile's Resume</title>
 </head>
 
 <body>
-    <header class="header container">
-        <nav>
-            <ul class="header-menu">
-                <li>
-                    <a class="header-link" href="#home">Home</a>
-                </li>
-                <li>
-                    <a class="header-link" href="#feedback">Feedback</a>
-                </li>
-                <li>
-                    <a class="header-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-            <button class="menu-bars">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
-                  </svg>
-            </button>
-        </nav>
-    </header>
-    <main>
-        <section class="hero container">
-            <img class="hero-img" src="/images/face-image.jpg" alt="Profile picture">
-            <h2 class="hero-subtitle">Hi, I'm Zukile</h2>
-            <h1 class="hero-title">SOFTWARE DEVELOPER</h1>
-            <p class="about-me">
-                I am a self-motivated,reliable, honest and responsible person.
-                I am adaptable to all challenging situations and able to work well both in a team environment as well as using own initiative.
-                I am very keen and willing to learn and develop new skills. I am seeking employment that will make best use of my skills and allow me to develop them further.
-            </p>
-            <a class="hero-button" href="#">Socials</a>
-        </section>
-        <!-- <section></section>
-        <section></section>
-        <section></section>
-        <section></section> -->
-    </main>
-    <footer></footer>
+    <article class="container">
+        <header class="header container">
+            <nav>
+                <ul class="header-menu">
+                    <li>
+                        <a class="header-link" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="header-link" href="#feedback">Feedback</a>
+                    </li>
+                    <li>
+                        <a class="header-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <button class="menu-bars">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                      </svg>
+                </button>
+            </nav>
+        </header>
+        <main>
+            <section class="hero container">
+                <picture>
+                    <source media="min-width: 1024px" srcset="./Images/profile-image.jpg">
+                    <source media="min-width: 768px" srcset="./Images/shoulders-image.jpg">
+                    <img  class="hero-img" src="./Images/face-image.jpg" alt="Profile picture">
+                </picture>
+                </div>
+                <h1 class="hero-subtitle">Zukile Lubanga</h1>
+                <h2 class="hero-title">SOFTWARE DEVELOPER</h2>
+                <p class="about-me">
+                    I am a <strong>self-motivated</strong>,<strong>reliable</strong>, <strong>honest</strong> and <strong>responsible</strong> person.
+                    I am <strong>adaptable</strong> to all challenging situations and able to work well both in a team environment as well as using own initiative.
+                    I am very keen and willing to learn and develop new skills. I am seeking employment that will make best use of my skills and allow me to develop them further.
+                </p>
+                <a class="hero-button btn" href="#">Socials</a>
+            </section>
+            <section education  container section>
+              <div class="education-content">
+                <h2 class="education-title">Education</h2>
+                <p class="education-description">Jameson Junior and High School.<br>2019.<br>Grade 12.</p>
+                <p class="education-description">Vunanimfundo AET Centre.<br>Grade 12.<br>2021</p>
+                <p class="education-description">CODESPACE.<br>Institute.<br>2023</p>
+                <hr class="education-hr"/>
+                <h3 class="education-subtitle">Subjects</h3>
+                <div class="sub-ul_container">
+                    <ul class="sub-ul">
+                        <li class="sub-list">English</li>
+                        <li class="sub-list">Afrikaans</li>
+                        <li class="sub-list">Life Science</li>
+                        <li class="sub-list">Business Studies</li>
+                    </ul>
+                    <ul class="sub-ul">
+                        <li class="sub-list">Physical Science</li>
+                        <li class="sub-list">Maths</li>
+                        <li class="sub-list">Life Orientation</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="certificate-content">
+                <h2 class="certificate-title">Certificate</h2>
+                <div class="certificate-subtitle_container">
+                 <h3 class="certificate-subtitle">Life Sciences</h3>
+                  <p class="certificate-description">Distinction : 80%</p>
+                 <h3 class="certificate-subtitle">Physical Science</h3>
+                  <p class="certificate-description">Distinction : 75%</p>
+                 <h3 class="certificate-subtitle">Afrikaans</h3>
+                  <p class="certificate-description">Distinction : 80%</p>
+                </div>  
+              </div>
+            </section>
+            <!-- <section></section> -->
+            <!-- <section></section> -->
+            <section class="contact container section">
+                <h2 class="contact-title">Social Media</h2>
+                <a class="contact-button" href="https://github.com/Z7K8L3" target="_blank">Github</a>
+                <a class="contact-button" href="https://linkedin.com/in/zukile-lubanga-18a273204" target="_blank">Linkedin</a>
+            </section>
+        </main>
+        <footer>
+            <!-- <div class="resume-section">
+                <h2 class="section-heading" id="contact">Contact</h2>
+              
+                <form action="https://formsubmit.co/zukile.81.lubanga@email.com" method="POST">
+                  <label for="name">Name:</label>
+                   <input type="text" name="name" id="name" placeholder="Your name" required>
+                  <br>
+        
+                  <label for="email">Email:</label>
+                   <input type="email" name="email" id="email" placeholder="Your email" required>
+                  <br>
+        
+                  <label for="subject">Subject:</label>
+                   <select name="subject" id="subject" required>
+                    <option value="disabled selected">Select a subject</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <br>
+        
+                  <label for="notes">Notes:</label>
+                   <textarea name="notes" id="notes" placeholder="Extra notes"></textarea>
+                  <br>
+        
+                  <button type="submit">Send</button>
+              </div> -->
+        </footer>
+    </article>
+
     
 </body>
 </html>
