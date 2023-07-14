@@ -10,21 +10,6 @@
     display: none;
 }
 
-.menu-bars {
-    color: var(--clr-light);
-    width: var(--sizes-2xl);
-    height: var(--sizes-2xl);
-    display: block;
-}
-
-.menu-bars {
-    background-color: transparent;
-    border: 1px solid transparent ;
-    width: 25px;
-    height: 25px;
-    display: block;
-}
-
 
 /* -- XS -- */
 /* @media (min-width: 475px) {
