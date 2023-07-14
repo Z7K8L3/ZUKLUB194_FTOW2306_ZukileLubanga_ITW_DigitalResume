@@ -1,0 +1,137 @@
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.hero-img {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+}
+
+.hero-subtitle {
+    line-height: 0.9;
+}
+
+.hero-title {
+    color: var(--clr-lime);
+    text-transform: uppercase;
+    font-size: var(--size-4xl);
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+}
+
+.about-me {
+    max-width: 60ch;
+    font-size: var(--size-small);
+    color: var(--clr-stoli);
+}
+
+.hero-button {
+    text-transform: capitalize;
+    font-size: var(--size-small);
+}
+
+/* -- XS -- */
+@media (min-width: 475px) {
+    .hero {
+        gap: 1.5rem;
+    }
+    
+    .hero-img {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: var(--sizes-large);
+    }
+    
+    .hero-title {
+        
+        font-size: var(--size-5xl);
+    }
+    
+    .about-me {
+        font-size: var(--size-base);
+    }
+    
+    .hero-button {
+        font-size: var(--size-base);
+    }
+}
+
+/* -- small -- */
+/* @media (min-width: 640px) {
+
+} */
+
+/* -- medium -- */
+/* @media (min-width: 768px) {
+
+} */
+
+/* -- large -- */
+@media (min-width: 1024px) {
+
+.hero-img {
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: var(--sizes-2xl);
+    }
+    
+    .hero-title {
+        
+        font-size: var(--size-7xl);
+    }
+    
+    .about-me {
+        font-size: var(--sizes-large);
+    }
+    
+    .hero-button {
+        font-size: var(--sizes-large);
+    }
+}
+
+/* -- XL -- */
+@media (min-width: 1280px) {
+    .hero {
+        gap: 2rem;
+    }
+    
+    .hero-img {
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    .hero-subtitle {
+        font-size: var(--sizes-4xl);
+    }
+    
+    .hero-title {
+        
+        font-size: var(--size-9xl);
+    }
+    
+    .about-me {
+        font-size: var(--sizes-xl);
+    }
+    
+    .hero-button {
+        font-size: var(--sizes-xl);
+    }
+}
+
+/* -- 2XL -- */
+/* @media (min-width: 1536px) {
+
+} */

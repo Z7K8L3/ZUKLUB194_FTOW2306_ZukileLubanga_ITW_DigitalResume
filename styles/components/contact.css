@@ -1,0 +1,58 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.contact-title {
+    font-size: var(--size-2xl);
+    color: var(--clr-light);
+    text-transform: capitalize;
+}
+
+.contact-btn {
+    font-size: var(--size-small);
+}
+
+/* -- XS -- */
+@media (min-width: 475px) {
+    .contact {
+        gap: 1.5rem;
+    }
+    
+    .contact-title {
+        font-size: var(--size-3xl);
+    }
+    
+    .contact-btn {
+        font-size: var(--size-nase);
+    }
+}
+
+/* -- small -- */
+/* @media (min-width: 640px) {
+
+} */
+
+/* -- medium -- */
+/* @media (min-width: 768px) {
+
+} */
+
+/* -- large -- */
+/* @media (min-width: 1024px) {
+
+} */
+
+/* -- XL -- */
+/* @media (min-width: 1280px) {
+
+} */
+
+/* -- 2XL -- */
+/* @media (min-width: 1536px) {
+
+} */
