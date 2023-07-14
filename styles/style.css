@@ -1,0 +1,51 @@
+:root {
+    --clr-dark: #0c0a09;
+    --clr-light: #ffffff;
+    --clr-orange: #ea580c;
+    --clr-lime: #65a30d;
+    --clr-stone: #44403c;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
+img picture svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+a {
+    color: var(--clr-lime)
+}
+
+strong {
+    color: var(--clr-orange);
+}
