@@ -4,6 +4,28 @@
     --clr-orange: #ea580c;
     --clr-lime: #65a30d;
     --clr-stone: #44403c;
+    --clr-stoli: #57534e;
+    --clr-stobri: #a8a29e;
+
+    /* stone rgb(68, 64, 60) */
+    /* lime rgb(101, 163, 13) */
+
+/* -- sizes -- */
+--size-xxs: 0.5rem
+--size-xs: 0.75rem
+--size-small: 0.875rem
+--size-base: 1rem
+--size-large: 1.125rem
+--size-xl: 1.25rem
+--size-2xl: 1.5rem
+--size-3xl: 1.875rem
+--size-4xl: 2.25rem
+--size-5xl: 3rem
+--size-6xl: 3.75rem
+--size-7xl: 4.5rem
+--size-8xl: 6rem
+--size-9xl:8rem
+--size-10xl:10rem
 }
 
 *,
@@ -27,13 +49,15 @@ body {
     color: var(--clr-light);
 }
 
-img picture svg {
+img,
+picture,
+svg {
     display: block;
     max-width: 100%;
     user-select: none;
 }
 
-button {
+.hero-button {
     display: inline-block;
     padding: 0;
     border: none;
@@ -43,7 +67,7 @@ button {
 }
 
 a {
-    color: var(--clr-lime)
+    color: var(--clr-stone)
 }
 
 strong {
