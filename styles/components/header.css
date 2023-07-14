@@ -1,15 +1,23 @@
 .header {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.header__menu {
+
+.header-menu {
     display: none;
 }
 
-.menu__bars {
+.menu-bars {
+    color: var(--clr-light);
+    width: var(--sizes-2xl);
+    height: var(--sizes-2xl);
+    display: block;
+}
+
+.menu-bars {
     background-color: transparent;
     border: 1px solid transparent ;
     width: 25px;
@@ -17,14 +25,20 @@
     display: block;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  
-} 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .header__menu {
+/* -- XS -- */
+/* @media (min-width: 475px) {
+    
+} */
+
+/* -- small -- */
+/* @media (min-width: 640px) {
+    
+} */
+
+/* -- medium -- */
+@media (min-width: 768px) {
+    .header-menu {
         display: flex;
         align-items: center;
         list-style: none;
@@ -32,39 +46,37 @@
         gap: 2em;
     }
     
-    .header__link {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: x-small;
+    .header-link {
+        font-size: var(--sizes-xs);
         text-decoration: none;
-        font-weight: bolder;
-        color: var(--clr-slate600);
+        font-weight: 600;
+        color: var(--clr-stone);
         letter-spacing: -0.05em;
         transition: color 0.3s;
     }
     
-    .header__link:hover {
-        color: var(--clr-rose);
-    }
-    
-    .header__line {
-        border: 1px solid var(--clr-slate600);
-        padding-top: 1.5em;
+    .header-link:hover {
+    color: var(--clr-lime);
     }
 
-    .menu__bars {
+    .header-bar {
         display: none;
     }
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .header__link {
-        font-size: small;   
-    }
-
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-   
 }
+
+/* -- large -- */
+@media (min-width: 1024px) {
+    .header-link {
+        font-size: var(--sizes-small);
+    }
+}
+
+/* -- XL -- */
+/* @media (min-width: 1280px) {
+
+} */
+
+/* -- 2XL -- */
+/* @media (min-width: 1536px) {
+
+} */
